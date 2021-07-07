@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="photobooth">
+        <div class="controls">
+            <button onclick="takePhoto()">Take Photo</button>
+            <div class="rgb">
+                <label for="rmin">Red Min:</label>
+                <input type="range" name="rmin" id="rmin" min=0 max=255 value=50>
+                <label for="rmax">Red Max:</label>
+                <input type="range" name="rmax" id="rmax" min=0 max=255 value=150>
+                <br>
+                <label for="gmin">Green Min:</label>
+                <input type="range" name="gmin" id="gmin" min=0 max=255 value=50>
+                <label for="gmax">Green Max:</label>
+                <input type="range" name="gmax" id="gmax" min=0 max=255 value=150>
+                <br>
+                <label for="bmin">Blue Min:</label>
+                <input type="range" name="bmin" id="bmin" min=0 max=255 value=50>
+                <label for="bmax">Blue Max:</label>
+                <input type="range" name="bmax" id="bmax" min=0 max=255 value=150>
+            </div>
+        </div>
+        <canvas class="photo"></canvas>
+        <video src="" class="player"></video>
+        <div class="strip"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
