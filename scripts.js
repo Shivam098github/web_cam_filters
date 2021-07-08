@@ -68,9 +68,9 @@ function greenScreen(pixels){
         let blue=pixels.data[i+2];
         if(red>=level.rmin && red<=level.rmax && green>=level.gmin && green<=level.gmax && blue>=level.bmin && blue<=level.bmax)
         {
-            pixels.data[i]=200;
-            pixels.data[i+1]=0;
-            pixels.data[i+2]=0;
+            pixels.data[i]=250;
+            pixels.data[i+1]=250;
+            pixels.data[i+2]=60;
 
         }
     }
